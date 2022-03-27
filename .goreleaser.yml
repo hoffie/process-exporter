@@ -22,14 +22,14 @@ builds:
       - 6
       - 7
 archives:
-  - name_template: "process-exporter-{{ .Version }}.{{ .Os }}-{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
+  - name_template: "process-exporter-hoffie-{{ .Version }}.{{ .Os }}-{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
     wrap_in_directory: true
 checksum:
   name_template: checksums.txt
 nfpms:
-  - homepage: https://github.com/ncabatoff/process-exporter
-    maintainer: nick.cabatoff+procexp@gmail.com
-    description: Prometheus exporter to report on processes running
+  - homepage: https://github.com/hoffie/process-exporter
+    maintainer: mail+gh@hoffmann-christian.info
+    description: Prometheus exporter to report on processes running (@hoffie's fork)
     license: MIT
     formats:
       - deb
@@ -51,7 +51,7 @@ nfpms:
       preremove: "packaging/scripts/preremove.sh"
 release:
   github:
-    owner: ncabatoff
+    owner: hoffie
     name: process-exporter
   draft: false
   prerelease: true

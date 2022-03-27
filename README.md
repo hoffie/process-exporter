@@ -1,4 +1,6 @@
 # process-exporter
+**Note::** This is the fork by @hoffie and not the original project by @ncabatoff. Do not report bugs about this fork to @ncabatoff's project.
+
 Prometheus exporter that mines /proc to report on selected processes.
 
 [release]: https://github.com/ncabatoff/process-exporter/releases/latest
